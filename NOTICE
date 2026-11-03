@@ -1,0 +1,26 @@
+RL Painting
+
+Maintained by Schofi.
+https://github.com/Schofi/RL-Painting
+
+This repository extracts the Watercolour project from adithya-s-k/FineEnvs.
+Upstream commit 240abf0869ad67956bf8b3363c04585f94df6342
+https://github.com/adithya-s-k/FineEnvs/tree/240abf0869ad67956bf8b3363c04585f94df6342/02-watercolour
+
+Original FineEnvs citation
+
+@misc{fineenvs,
+  author = {Kolavi, Adithya S},
+  title  = {FineEnvs: Open Source RL Environments for LLM Agents},
+  year   = {2026},
+  url    = {https://github.com/adithya-s-k/FineEnvs}
+}
+
+The original painting-with-code idea is credited to Surya Narreddi.
+https://surya.website/rling-qwen-to-paint-with-code
+
+The repository license is supplied in LICENSE.
+Source files retain their upstream SPDX identifiers.
+The BSD-3-Clause text is supplied in LICENSES/BSD-3-Clause.txt.
+The vendored p5.js and p5.brush notices are supplied alongside those libraries
+in envs/watercolour/core/vendor/.
