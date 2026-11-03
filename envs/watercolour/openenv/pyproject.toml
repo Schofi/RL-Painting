@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+[project]
+name = "openenv-watercolour-env"
+version = "0.1.0"
+description = "Watercolour environment for OpenEnv"
+requires-python = ">=3.10"
+dependencies = [
+    "openenv>=0.2.2",
+    "fastapi>=0.115.0",
+    "pydantic>=2.0.0",
+    "uvicorn[standard]>=0.24.0",
+    "requests>=2.31.0",
+    # The submission is untrusted JavaScript and p5.brush needs a real WEBGL
+    # context, so rendering runs in Chromium. The matching browser build is
+    # installed in the image; see server/Dockerfile.
+    "playwright==1.62.0",
+    "pillow>=10.0.0",
+    "numpy>=1.24.0",
+    # Only needed when the vision judge is enabled.
+    "huggingface-hub>=0.34.0",
+    # Only needed when the dense term is served by an HPSv3 Space rather than by
+    # the judge model. See [`~envs.watercolour_env.server.quality.HPSv3Scorer`].
+    "aiohttp>=3.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.0.0",
+]
+
+[tool.uv]
+# Run app.py from this directory alongside ../core and its vendored libraries.
+package = false
