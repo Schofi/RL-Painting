@@ -1,6 +1,6 @@
 # The pin is HPSv3's own and it is real: its model class rejects how transformers
 # 5.x constructs models. Nothing else here needs a newer one.
-transformers==4.45.2
+transformers==5.10.1
 hpsv3
 torch
 torchvision
